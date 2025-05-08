@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arabic Text-to-Speech</title>
+</head>
+<body>
+  <h2>Arabic Text-to-Speech Generator</h2>
+  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+  <form method="POST">
+    <textarea name="text" rows="10" cols="60" placeholder="اكتب النص العربي هنا..."></textarea><br>
+    <button type="submit">🔊 Generate MP3</button>
+  </form>
+</body>
+</html>
